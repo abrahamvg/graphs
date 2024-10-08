@@ -1,0 +1,41 @@
+# Change these first
+owner: abrahamvg # Your GitHub organization or username, where this repository lives
+repo: test-dashboard # The name of this repository
+runner: "[self-hosted, my-runner]"
+sites:
+  - name: Google 
+    url: https://www.google.com
+    __dangerous__disable_verify_host: true
+  - name: Personal Web
+    url: https://www.abrahamvg.in
+    __dangerous__disable_verify_host: true
+  - name: Wikipedia
+    url: https://en.wikipedia.org
+    __dangerous__disable_verify_host: true
+# dirs:
+#   - name: My Share
+#     path: \\INGBTCPIC5NBG16\ShareStorage\test.txt
+#     acceptanceAge: 100
+#     warningAge: 200
+#     errorAge: 250
+#     slug: dir-myShare
+status-website:
+  # Add your custom domain name, or remove the `cname` line if you don't have a domain
+  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
+  # cname: demo.upptime.js.org
+  baseUrl: /test-dashboard
+  publish: true
+  userContentBaseUrl: https://proxy-server-gtjc.onrender.com/raw-github-content
+  apiBaseUrl: https://proxy-server-gtjc.onrender.com/api-github-content
+  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
+  name: TestDashboard
+  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub. Check where text can be edited"
+  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  navbar:
+    - title: Status
+      href: /
+    - title: GitHub
+      href: https://github.com/$OWNER/$REPO
+
+# Upptime also supports notifications, assigning issues, and more
+# See https://upptime.js.org/docs/configuration

@@ -53,6 +53,7 @@
     "chart.js": "^2.9.3",
     "chartjs-node-canvas": "^3.0.8",
     "dayjs": "^1.9.6",
+    "dotenv": "^16.4.5",
     "fs-extra": "^9.0.1",
     "js-yaml": "^4.0.0"
   }
