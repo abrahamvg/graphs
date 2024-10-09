@@ -15,6 +15,9 @@ jobs:
         uses: actions/setup-node@v2.1.5
         with:
           node-version: 14
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ruby
       - name: Setup Licensed
         uses: github/setup-licensed@v1
         with:
