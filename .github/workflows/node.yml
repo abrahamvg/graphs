@@ -16,11 +16,11 @@ jobs:
         with:
           node-version: 14
       - name: Setup Licensed
-        uses: jonabc/setup-licensed@v1.0.1
+        uses: github/setup-licensed@v1
         with:
-          version: 2.x
+          version: 4.x
       - name: Cache node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         env:
           cache-name: cache-node-modules
         with:
