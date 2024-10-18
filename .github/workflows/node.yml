@@ -15,10 +15,6 @@ jobs:
         uses: actions/setup-node@v2.1.5
         with:
           node-version: 20
-      - name: Setup Licensed
-        uses: jonabc/setup-licensed@v1.0.1
-        with:
-          version: 2.x
       - name: Cache node modules
         uses: actions/cache@v2
         env:
