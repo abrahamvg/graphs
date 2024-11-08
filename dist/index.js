@@ -61,6 +61,7 @@ const generateGraphs = async () => {
         userAgent: config.userAgent || process.env.USER_AGENT || "KojBot",
     });
     await (0, fs_extra_1.ensureDir)((0, path_1.join)(".", "graphs"));
+    if(config.sites)
     for await (const site of config.sites) {
         const slug = site.slug ? site.slug : (0, slugify_1.default)(site.name);
         if (!slug)
@@ -251,6 +252,7 @@ const generateGraphs = async () => {
             },
         }));
     }
+    if(config.dirs)
     for await (const dir of config.dirs) {
         const slug = dir.slug ? dir.slug : (0, slugify_1.default)(dir.name);
         if (!slug)
