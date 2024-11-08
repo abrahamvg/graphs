@@ -79,7 +79,7 @@ export const generateGraphs = async () => {
   });
 
   await ensureDir(join(".", "graphs"));
-
+  if(config.sites)
   for await (const site of config.sites) {
     const slug = site.slug ? site.slug : slugify(site.name);
     if (!slug) continue;
@@ -300,6 +300,7 @@ export const generateGraphs = async () => {
       })
     );
   }
+  if(config.dirs)
   for await (const dir of config.dirs) {
     const slug = dir.slug ? dir.slug : slugify(dir.name);
     if (!slug) continue;
