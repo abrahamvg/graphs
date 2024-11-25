@@ -50,7 +50,7 @@
   "dependencies": {
     "@octokit/rest": "^18.0.6",
     "@sindresorhus/slugify": "^1.1.0",
-    "chart.js": "^2.9.3",
+    "chart.js": "^4.4.6",
     "chartjs-node-canvas": "^3.0.8",
     "dayjs": "^1.9.6",
     "dotenv": "^16.4.5",
