@@ -38,7 +38,7 @@
     "@semantic-release/github": "^7.1.1",
     "@semantic-release/npm": "^7.0.6",
     "@types/chart.js": "^2.9.25",
-    "@types/fs-extra": "^9.0.2",
+    "@types/fs-extra": "^11.0.4",
     "@types/jest": "^26.0.14",
     "@types/js-yaml": "^4.0.0",
     "jest": "^26.4.2",
@@ -54,7 +54,7 @@
     "chartjs-node-canvas": "^3.0.8",
     "dayjs": "^1.9.6",
     "dotenv": "^16.4.5",
-    "fs-extra": "^9.0.1",
+    "fs-extra": "^11.2.0",
     "js-yaml": "^4.0.0"
   }
 }
